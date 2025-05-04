@@ -41,7 +41,7 @@ const createGame = ({ width, density }) => {
       return
     }
 
-    let count
+    let count = 0
     if (neighbours.map(([u, v]) => count += !!mines[[x+u, y+v]]), count) {
       el.innerText = count
       el.classList.add("count" + count)
