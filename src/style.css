@@ -1,0 +1,39 @@
+body {
+  font: 700 14pt/1.5 system-ui, sans-serif;
+  background: #121212;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#mines {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+  margin: 4px;
+
+  div, div:active {
+    color: #d8d9d0;
+    background: #181818;
+
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 11vw;
+
+    border-radius: 6px;
+  }
+
+  .flag   { background: #2a2a2a }
+  .hidden { background: #d895ee }
+
+  .count1 { color: #959ae8 }
+  .count2 { color: #9be099 }
+  .count3 { color: #ee9598 }
+  .count4 { color: #ee9598 }
+  .count5 { color: #ee9598 }
+  .count6 { color: #ee9598 }
+  .count7 { color: #ee9598 }
+  .count8 { color: #ee9598 }
+}
